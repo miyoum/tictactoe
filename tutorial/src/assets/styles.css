@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "CupiddeLocke";
+  src: url("./assets/fonts/CupiddeLocke.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Status {
+  font-family: "CupiddeLocke", cursive;
+  font-size: 1.5em;
+  color: #020101;
+}
+
+.Square {
+  flex: 1 1 30%;
+  aspect-ratio: 1; /* Carré parfait */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vw;
+  width: 8vw;
+  margin: 2vh;
+  padding: 4vh;
+  background-color: #fffdf7;
+}
+
+.Square:hover {
+  background-color: #f7ffe4; /* rose bonbon pastel */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #ffb6c1; /* hover border */
+}
+
+.Square:active {
+  transform: scale(0.95);
+}
+
+body {
+  background-color: #c1f5d0;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
